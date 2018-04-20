@@ -30,9 +30,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>1.2.47</version>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.7</version>
 		</dependency>
 
 	</dependencies>
@@ -51,20 +51,9 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			 -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-javadoc-plugin</artifactId> 
+				<executions> <execution> <id>attach-javadocs</id> <goals> <goal>jar</goal> 
+				</goals> </execution> </executions> </plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

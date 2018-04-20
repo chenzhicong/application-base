@@ -1,5 +1,11 @@
 package com.tech.application.base.controller;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.apache.commons.lang3.StringUtils;
+
 import com.tech.application.base.model.Result;
 import com.tech.application.base.model.ResultSuccess;
 
@@ -25,5 +31,15 @@ public abstract class BaseController {
 		result.setErrorMsg(errorMsg);
 		
 		return result;
+	}
+	
+	public List<String> getParamList(final String parmaStr, final String separator) {
+
+		if (StringUtils.isNotBlank(parmaStr)) {
+			String[] array = parmaStr.split(separator);
+			return Arrays.asList(array);
+		} else {
+			return new ArrayList<String>(0);
+		}
 	}
 }
