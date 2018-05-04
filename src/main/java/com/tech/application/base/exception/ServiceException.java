@@ -15,11 +15,13 @@ public class ServiceException extends RuntimeException {
 	
 	public ServiceException(String message) {
 		super(message);
+		this.message = message;
 		this.code = ResultErrorCode.SERVICE_ERROR.getCode();
 	}
 
 	public ServiceException(String message, Throwable cause) {
 		super(message, cause);
+		this.message = message;
 		this.code = ResultErrorCode.SERVICE_ERROR.getCode();
 	}
 

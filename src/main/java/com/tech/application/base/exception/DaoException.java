@@ -15,11 +15,13 @@ public class DaoException extends RuntimeException {
 	
 	public DaoException(String message) {
 		super(message);
+		this.message = message;
 		this.code = ResultErrorCode.SERVICE_ERROR.getCode();
 	}
 
 	public DaoException(String message, Throwable cause) {
 		super(message, cause);
+		this.message = message;
 		this.code = ResultErrorCode.SERVICE_ERROR.getCode();
 	}
 
